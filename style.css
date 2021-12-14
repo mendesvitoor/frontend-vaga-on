@@ -1,0 +1,79 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212b46;
+    background-image: linear-gradient(#121212,#212b46);
+}
+.menu_top{
+    background-color:rgba(255, 255, 255, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 7%;
+    left: 0px;
+    top: 0px;
+    display: flex;
+}
+.menu_top img{
+    height: 28px;
+    margin: 20px;
+}
+.botaoEntrar{
+    margin: 20px;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    font-size: 28px;
+    color: #FFF;
+    position: absolute;
+    left: 96%;
+    cursor: pointer;
+}
+.titulo{
+    font-size: 28px;
+    color: #fff;
+    position: absolute;
+    width: 135px;
+    height: 132px;
+    left: 20px;
+    top: 20px;
+    animation: droparTitulo 2s;
+}
+
+@keyframes droparTitulo{
+    from{
+        transform: rotateX(45deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+.containerInput {
+    padding: 20px;
+    margin: 100px 0;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px rgba(0,0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.containerInput input{
+    background-color: transparent;
+    border: 0;
+    font-size: 25px;
+    color: #FFF;
+    outline: none;
+    margin-right: 10px;
+}
+.containerInput input::placeholder{
+    color: #f1f1f1;
+}
+.botaoProcurar{
+    background-color: transparent;
+    border: 0;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.botaoProcurar:hover{
+    transform: scale(1.2);
+}
